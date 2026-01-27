@@ -1,8 +1,43 @@
 # 🦞 Lobster Workflows
 
+```
+═══════════════════════════════════════════════════════════════════════════════════
+█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+█                                                                               █
+█   ██╗░░░░░░█████╗░██████╗░░██████╗████████╗███████╗██████╗░                   █
+█   ██║░░░░░██╔══██╗██╔══██╗██╔════╝╚══██╔══╝██╔════╝██╔══██╗                  █
+█   ██║░░░░░██║░░██║██████╦╝╚█████╗░░░░██║░░░█████╗░░██████╔╝                  █
+█   ██║░░░░░██║░░██║██╔══██╗░╚═══██╗░░░██║░░░██╔══╝░░██╔══██╗                  █
+█   ███████╗╚█████╔╝██████╦╝██████╔╝░░░██║░░░███████╗██║░░██║                  █
+█   ╚══════╝░╚════╝░╚═════╝░╚═════╝░░░░╚═╝░░░╚══════╝╚═╝░░╚═╝                  █
+█                                                                               █
+█   ░██╗░░░░░░░██╗░█████╗░██████╗░██╗░░██╗███████╗██╗░░░░░░█████╗░░██╗░░░░░██╗ █
+█   ░██║░░██╗░░██║██╔══██╗██╔══██╗██║░██╔╝██╔════╝██║░░░░░██╔══██╗░██║░░██╗██║ █
+█   ░╚██╗████╗██╔╝██║░░██║██████╔╝█████═╝░█████╗░░██║░░░░░██║░░██║░╚██╗████╔╝█ █
+█   ░░████╔═████║░██║░░██║██╔══██╗██╔═██╗░██╔══╝░░██║░░░░░██║░░██║░░████╔═████║ █
+█   ░░╚██╔╝░╚██╔╝░╚█████╔╝██║░░██║██║░╚██╗██║░░░░░███████╗╚█████╔╝░░╚██╔╝░╚██╔╝ █
+█   ░░░╚═╝░░░╚═╝░░░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚══════╝░╚════╝░░░╚═╝░░░╚═╝░ █
+█                                                                               █
+█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
+═══════════════════════════════════════════════════════════════════════════════════
+
+           🦞 PR REVIEW  ●  DEPLOY ANNOUNCE  ●  ROLL CALL  ●  X POST
+          ●  KNOWLEDGE EXTRACTION  ●  AND MORE COMING SOON...  🦞
+
+      ════════════════════════════════════════════════════════════════════
+        DETERMINISTIC PIPELINES  ●  APPROVAL GATES  ●  STATE TRACKING
+      ════════════════════════════════════════════════════════════════════
+
+                           ©2026 JDRHYNE ENTERTAINMENT
+```
+
 A collection of ready-to-use [Lobster](https://github.com/clawdbot/lobster) workflow templates for [Moltbot](https://github.com/clawdbot/clawdbot) (formerly Clawdbot).
 
-Lobster is a deterministic workflow engine — typed pipelines with approval gates, state tracking, and token-efficient automation. These workflows replace freeform LLM orchestration with predictable, repeatable pipelines.
+Lobster is a deterministic workflow engine — typed pipelines with approval gates, state tracking, and token-efficient automation. These workflows replace freeform LLM orchestration with predictable, repeatable pipelines. Think of them like shell scripts for AI agents: instead of hoping the LLM figures out the right sequence every time, you define the exact steps, checkpoints, and approvals once — and it runs the same way every time.
+
+> **Looking for agent skills and prompts instead of workflows?** Check out [**agent-skills**](https://github.com/jdrhyne/agent-skills) — a companion repo of skills for Moltbot, Claude Code, Codex, and other LLM agents.
+
+> **🤝 Want to contribute a workflow?** See [Contributing](#contributing) below — PRs welcome!
 
 ## Workflows
 
