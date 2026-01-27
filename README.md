@@ -1,6 +1,6 @@
 # 🦞 Lobster Workflows
 
-A collection of ready-to-use [Lobster](https://github.com/clawdbot/lobster) workflow templates for [Clawdbot](https://github.com/clawdbot/clawdbot).
+A collection of ready-to-use [Lobster](https://github.com/clawdbot/lobster) workflow templates for [Moltbot](https://github.com/clawdbot/clawdbot) (formerly Clawdbot).
 
 Lobster is a deterministic workflow engine — typed pipelines with approval gates, state tracking, and token-efficient automation. These workflows replace freeform LLM orchestration with predictable, repeatable pipelines.
 
@@ -27,7 +27,7 @@ Lobster is a deterministic workflow engine — typed pipelines with approval gat
 
 ### 1. Install Lobster
 
-Lobster ships with [Clawdbot](https://github.com/clawdbot/clawdbot). If you have Clawdbot, you have Lobster.
+Lobster ships with [Moltbot](https://github.com/clawdbot/clawdbot). If you have Moltbot, you have Lobster.
 
 ### 2. Copy a Workflow
 
@@ -35,7 +35,7 @@ Lobster ships with [Clawdbot](https://github.com/clawdbot/clawdbot). If you have
 # Clone this repo
 git clone https://github.com/jdrhyne/lobster-workflows.git
 
-# Copy a workflow to your Clawdbot workspace
+# Copy a workflow to your Moltbot workspace
 cp lobster-workflows/workflows/pr-review.lobster ~/my-workspace/workflows/
 ```
 
@@ -45,7 +45,7 @@ Each workflow has a **Platform Customization** section at the top explaining wha
 
 ```yaml
 # ── Platform Customization ──────────────────────────────────────────────
-# This workflow uses Clawdbot's message tool for notifications.
+# This workflow uses Moltbot's message tool for notifications.
 # Adapt these for your messaging platform:
 #   - channel IDs → your platform's channel/group/chat identifiers
 #   - thread-create → may not be available on all platforms
@@ -93,7 +93,7 @@ Create thread → Ping agents → Request reports → Self-report → Wait → R
 ```
 
 **Inputs:** `reports_channel`, `wait_minutes`, `bot_ids`, `agent_labels`
-**Tools:** Clawdbot message + sessions_send
+**Tools:** Moltbot message + sessions_send
 **Approval gates:** 0 (fully automated)
 **Note:** Requires a platform with threading support (Discord, Slack). For non-threaded platforms, use a dedicated channel.
 
@@ -142,7 +142,7 @@ Read daily notes → List existing entities → Extract facts (LLM) → Review �
 
 ## Platform Support
 
-These workflows use Clawdbot's `message` tool, which routes to whatever platform you have configured:
+These workflows use Moltbot's `message` tool, which routes to whatever platform you have configured:
 
 | Platform | Threads | Notes |
 |----------|---------|-------|
@@ -208,7 +208,7 @@ Have a useful workflow? PRs welcome!
 ## Related
 
 - [Lobster](https://github.com/clawdbot/lobster) — The workflow engine
-- [Clawdbot](https://github.com/clawdbot/clawdbot) — The AI agent platform
+- [Moltbot](https://github.com/clawdbot/clawdbot) — The AI agent platform
 - [Agent Skills](https://github.com/jdrhyne/agent-skills) — Skills and prompts for AI agents
 
 ## License
