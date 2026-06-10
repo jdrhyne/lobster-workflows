@@ -47,7 +47,7 @@ Think of them like shell scripts for AI agents: instead of hoping the LLM figure
 
 | Workflow | Steps | Description |
 |----------|-------|-------------|
-| [`x-morning-post`](workflows/x-morning-post.lobster) | 8 | Select a content seed, generate a draft via LLM, approve, and post to X |
+| [`x-morning-post`](workflows/x-morning-post.lobster) | 7 | Select a content seed, generate a draft via LLM, approve, and save a manual posting handoff |
 | [`daily-roll-call`](workflows/daily-roll-call.lobster) | 10 | Create a thread, ping all agents, collect reports, compile a fleet summary |
 | [`pr-review`](workflows/pr-review.lobster) | 7 | Fetch GitHub PR state, diff against last run, summarize changes, post update |
 | [`deploy-announce`](workflows/deploy-announce.lobster) | 8 | Fetch release info, generate announcement, approve, post to channel + X |
@@ -111,15 +111,15 @@ lobster run workflows/knowledge-extraction.lobster
 
 ### 🐦 X Morning Post
 
-Human-in-the-loop content publishing pipeline.
+Human-in-the-loop content drafting pipeline.
 
 ```
-Parse content seeds → Select seed → Confirm → Generate draft (LLM) → Approve → Post via bird CLI → Mark posted
+Parse content seeds → Select seed → Confirm → Generate draft (LLM) → Approve → Save draft handoff
 ```
 
-**Inputs:** `seed_id` (optional), `seeds_file` (path to your content seeds)
-**Tools:** [bird CLI](https://github.com/steipete/bird), LLM via `clawd.invoke`
-**Approval gates:** 2 (seed selection + final post)
+**Args:** `seed_id` (optional), `seeds_file` (path to your content seeds), `output_dir` (draft handoff directory)
+**Tools:** LLM via `llm_task.invoke`, filesystem
+**Approval gates:** 2 (seed selection + final draft handoff)
 
 ---
 
